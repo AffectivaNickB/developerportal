@@ -20,12 +20,12 @@ In the JSON-formatted index, the user service URL will be the value associated w
 
 ### Locating a User
 
-Before using a user object, a client must locate the URL of that user.  We use the username (which is usually the user's email address) as a key to a user, so that is passed to the user service as a URL parameter.
+Before using a user object, a client must locate the URL of that user.  We use the username (which is typically an email address) as a key to a user, so that is passed to the user service as a URL parameter.
 
-To locate a user, make a GET request to the user service root URL, with one parameter named "name".  For example:
+To locate a user, make a GET request to the user service root URL, with one parameter named "username".  For example:
 
 ```http
-GET UserServiceURL?name=rubot@affdex.com HTTP/1.1
+GET UserServiceURL?username=john.doe@affdex.com HTTP/1.1
 Accept: application/json
 ```
 
@@ -36,13 +36,30 @@ The response will be an array of objects, each describing one user.  The respons
 ```json
 [
   {
-    "name":"rubot@affdex.com",
-    "firstname":"Rubot",
-    "lastname":"Automation",
+    "username":"john.doe@affdex.com",
+    "firstname":"John",
+    "lastname":"Doe",
     "self":"UserURL"
     ...
   }
 ]
+```
+
+The UserURL can be used to retrieve that user's data.  For example:
+
+```http
+GET UserURL HTTP/1.1
+Accept: application/json
+```
+
+```json
+{
+  "username":"john.doe@affdex.com",
+  "firstname":"John",
+  "lastname":"Doe",
+  "self":"UserURL"
+  ...
+}
 ```
 
 ## The Project Service
