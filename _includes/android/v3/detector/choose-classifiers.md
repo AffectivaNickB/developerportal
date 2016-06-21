@@ -12,7 +12,7 @@ To turn on or off the detection of all expressions, emotions, emojis, or appeara
 detector.setDetectAllExpressions(true);
 detector.setDetectAllEmotions(true);
 detector.setDetectAllEmojis(true);
-detector.setDetectAllAppearance(true);
+detector.setDetectAllAppearances(true);
 ```
 
 To check the status of a classifier at any time, for example smile:
