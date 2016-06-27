@@ -14,11 +14,8 @@ This page contains the release notes for the different versions of the Affdex SD
 
 ### Affdex SDK version 3.1
 * Win SDK
-  - [SDK-627](https://affectiva.atlassian.net/browse/SDK-427) - Improved emotion metrics. The valence includes new expressions in its calculation.
-  - [SDK-426](https://affectiva.atlassian.net/browse/SDK-426) - Added models for classifying [ethnicity](/metrics#appearance) and estimating [age range](/metrics#appearance).
-
-* OSX SDK
-  - [SDK-673](https://affectiva.atlassian.net/browse/SDK-673) - Added an API that allows the developer to control the face detector configuration to use in the detection.
+  - Improved emotion metrics. The valence includes new expressions in its calculation.
+  - Added models for classifying [ethnicity](/metrics#appearance) and estimating [age range](/metrics#appearance).
 
 ***
 
