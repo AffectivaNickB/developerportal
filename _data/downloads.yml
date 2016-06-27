@@ -90,6 +90,11 @@ platforms:
       version: "3.0.1"
       package: https://download.affectiva.com/osx/affdex-sdk_OSX_3_0_1_213.zip
       size: 26.4 MB
+    - status: beta
+      architecture: x86_64
+      version: "3.1-226"
+      package: https://download.affectiva.com/osx/affdex-sdk_OSX_3_0_2_226.zip
+      size: 26.4 MB
     - status: stable
       architecture: x86_64
       version: "3.0.2"
