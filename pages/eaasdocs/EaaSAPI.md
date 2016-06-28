@@ -177,7 +177,8 @@ Response:
 ]
 ```
 
-A POST to the EntryAnnotationURL creates a new annotation.  Two parameters are required: annotation[key] and annotation[value].
+A POST to the EntryAnnotationURL creates a new annotation.  Two parameters are required: annotation[key] and annotation[value]. The maximum length of each key and each value is 255 characters.
+
 
 ```http
 POST EntryAnnotationURL HTTP/1.1
